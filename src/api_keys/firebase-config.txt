@@ -1,0 +1,1 @@
+Get firebase config from https://console.firebase.google.com/u/0/project/folkforms-1/overview and create firebase-config.json
