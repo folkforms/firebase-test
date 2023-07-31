@@ -21,6 +21,7 @@ const App = () => {
           ? <Home user={user} />
           : <>
               <Login1 />
+              <br />
               <Login2 />
             </>}
       </header>

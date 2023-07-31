@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+.explainer {
+  padding-bottom: 10px;
+}
+
+.login-button {
+  padding: 0px;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 9999px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.login-button:hover,
+.google-btn:hover {
+  background-color: rgb(207, 217, 222);
+}
+
+.google-btn {
+  width: 184px;
+  height: 42px;
+  border-radius: 9999px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+}
+.google-icon {
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+
+.sign-out-button-text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-out-button-text {
+  margin: 11px 0 0 0;
+}
