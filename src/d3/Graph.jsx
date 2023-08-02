@@ -18,9 +18,15 @@ const Test1 = ({ width = 640, height = 300 }) => {
     })
     .on('drag', function(event) {
       const me = d3.select(this);
+      let y = event.y;
+      if (y < 10) {
+        y = 10;
+      } else if (y > 290) {
+        y = 290;
+      }
       // me.attr('cx', event.x);
-      me.attr('cy', event.y);
-      setPos0([10, event.y]);
+      me.attr('cy', y);
+      setPos0([10, y]);
     });
     const bar = d3.select("#left-circle");
     handleDrag(bar);
@@ -34,9 +40,21 @@ const Test1 = ({ width = 640, height = 300 }) => {
     })
     .on('drag', function(event) {
       const me = d3.select(this);
-      me.attr('cx', event.x);
-      me.attr('cy', event.y);
-      setPos1([event.x, event.y]);
+      let x = event.x;
+      if (x < 10) {
+        x = 10;
+      } else if (x > 630) {
+        x = 630;
+      }
+      let y = event.y;
+      if (y < 10) {
+        y = 10;
+      } else if (y > 290) {
+        y = 290;
+      }
+      me.attr('cx', x);
+      me.attr('cy', y);
+      setPos1([x, y]);
     });
     const bar = d3.select("#middle-circle");
     handleDrag(bar);
@@ -50,9 +68,15 @@ const Test1 = ({ width = 640, height = 300 }) => {
     })
     .on('drag', function(event) {
       const me = d3.select(this);
-      me.attr('cx', event.x);
+      let x = event.x;
+      if (x < 10) {
+        x = 10;
+      } else if (x > 630) {
+        x = 630;
+      }
+      me.attr('cx', x);
       // me.attr('cy', event.y);
-      setPos2([event.x, 290]);
+      setPos2([x, 290]);
     });
     const bar = d3.select("#bottom-circle");
     handleDrag(bar);
