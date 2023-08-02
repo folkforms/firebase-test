@@ -24,7 +24,7 @@ const Home = ({ user }) => {
         </div>
       </button>
       <br />
-      <Test1 data={data} />
+      <Test1 />
     </div>
   )
 }
