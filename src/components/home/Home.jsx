@@ -9,6 +9,8 @@ const Home = ({ user }) => {
       <img src={user.photoURL} alt="" />
       <br />
       <br />
+      <div>You have successfully logged in to the app via Google</div>
+      <br />
       <button className="login-button" onClick={() => auth.signOut()}>
         <div className="google-btn">
           <div className="sign-out-button-text-container">
