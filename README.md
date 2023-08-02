@@ -6,6 +6,10 @@ Testing a "sign in with Google page"
 
 - Go to either [folkforms-1.web.app](https://folkforms-1.web.app/) or [folkforms-1.firebaseapp.com](https://folkforms-1.firebaseapp.com/)
 
+## Local development
+
+- `npm start`
+
 ## Deploy
 
 - `npm run build`
