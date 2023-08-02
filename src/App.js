@@ -20,6 +20,7 @@ const App = () => {
         {user
           ? <Home user={user} />
           : <>
+              <h3 className="dark center">Click either of these buttons to sign in with Google</h3>
               <Login1 />
               <br />
               <br />
