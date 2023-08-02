@@ -2,12 +2,11 @@ import React from 'react';
 import { auth } from '../../firebase/firebase';
 import './Home.css';
 import '../login/button.css';
-import Graph from '../../d3/Graph';
 
 const Home = ({ user }) => {
   return (
     <div className="home">
-      <h3>Hello, {user.displayName}</h3>
+      <h2>Hello, {user.displayName}</h2>
       <img src={user.photoURL} alt="" />
       <br />
       <div className="explainer">You have successfully logged in to the app via Google</div>
@@ -18,9 +17,6 @@ const Home = ({ user }) => {
           </div>
         </div>
       </button>
-      <br />
-      <br />
-      <Graph />
     </div>
   )
 }
