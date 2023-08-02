@@ -1,8 +1,13 @@
 import React from 'react';
 import { auth } from '../../firebase/firebase';
 import '../login/button.css';
+import * as d3 from "d3";
+import Test1 from '../../d3/Test1';
+import Test2 from '../../d3/Test2';
 
 const Home = ({ user }) => {
+  const data = d3.ticks(-2, 2, 200).map(Math.sin);
+
   return (
     <div className="home">
       <h1>Hello, {user.displayName}</h1>
@@ -18,6 +23,8 @@ const Home = ({ user }) => {
           </div>
         </div>
       </button>
+      <br />
+      <Test1 data={data} />
     </div>
   )
 }

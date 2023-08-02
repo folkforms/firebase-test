@@ -1,0 +1,27 @@
+svg {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+line {
+  shape-rendering: crispEdges;
+  vector-effect: non-scaling-stroke;
+
+  stroke: #000;
+  stroke-width: 5px;
+}
+
+.active-d3-item {
+  cursor: pointer;
+  
+  stroke: magenta;
+}
+
+/* -------- */
+
+.outline {
+  border: 1px solid goldenrod;
+}
+
+.margin-all-10px {
+  margin: 10px;
+}
