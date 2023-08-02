@@ -1,21 +1,16 @@
 import React from 'react';
 import { auth } from '../../firebase/firebase';
+import './Home.css';
 import '../login/button.css';
-import * as d3 from "d3";
-import Test1 from '../../d3/Test1';
-import Test2 from '../../d3/Test2';
+import Graph from '../../d3/Graph';
 
 const Home = ({ user }) => {
-  const data = d3.ticks(-2, 2, 200).map(Math.sin);
-
   return (
     <div className="home">
-      <h1>Hello, {user.displayName}</h1>
+      <h3>Hello, {user.displayName}</h3>
       <img src={user.photoURL} alt="" />
       <br />
-      <br />
-      <div>You have successfully logged in to the app via Google</div>
-      <br />
+      <div className="explainer">You have successfully logged in to the app via Google</div>
       <button className="login-button" onClick={() => auth.signOut()}>
         <div className="google-btn">
           <div className="sign-out-button-text-container">
@@ -24,7 +19,8 @@ const Home = ({ user }) => {
         </div>
       </button>
       <br />
-      <Test1 />
+      <br />
+      <Graph />
     </div>
   )
 }
