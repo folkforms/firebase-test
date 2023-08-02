@@ -18,4 +18,4 @@ Testing a "sign in with Google page"
 
 ## Setup notes
 
-See [setup-steps.md]
+See [setup-steps.md](setup-steps.md)
