@@ -15,17 +15,30 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+      <div className="dark padding-all-20px center">
         {user
           ? <Home user={user} />
           : <>
               <Login1 />
               <br />
+              <br />
               <Login2 />
             </>}
-      </header>
-    </div>
+      </div>
+      <div className="dark center padding-top-100px">
+        <div>Note: You will likely see a warning the app not being verified. This is because the verification process takes days to weeks.</div>
+        <div>Please click through the warnings as shown below. You can use a throwaway Gmail account if you are security conscious.</div>
+      </div>
+      <div className="center images-container">
+        <figure>
+          <img src="./verified1.png" className="center" />
+        </figure>
+        <figure>
+          <img src="./verified2.png" className="center" />
+        </figure>
+      </div>
+    </>
   );
 }
 
