@@ -5,7 +5,7 @@ import './button.css';
 const Login = () => {
   return (
     <>
-      <div className="explainer">Popup:</div>
+      <div className="explainer">Sign in via pop-up window:</div>
       <button className="login-button" onClick={signInWithGooglePopup}>
         <div className="google-btn">
             <div className="google-icon-wrapper">

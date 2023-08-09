@@ -20,11 +20,15 @@ const App = () => {
         {user
           ? <Home user={user} />
           : <>
-              <h3 className="dark center">Click either of these buttons to sign in with Google</h3>
-              <Login1 />
-              <br />
-              <br />
-              <Login2 />
+              <div className="middle-col">
+                <div className="light center padding-all-20px top-part">
+                  <h3 className="light center">Click either of these buttons to sign in with Google</h3>
+                  <Login1 />
+                  <br />
+                  <br />
+                  <Login2 />
+                </div>
+              </div>
               <div className="dark center padding-top-100px">
                 <div><strong>NB:</strong> You will likely see a warning about the app not being verified. This is because the verification process takes days to weeks.</div>
                 <div>Please click through the warnings as shown below. You can use a throwaway Gmail account if you are security conscious.</div>

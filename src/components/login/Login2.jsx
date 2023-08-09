@@ -5,7 +5,7 @@ import './button.css';
 const Login = () => {
   return (
     <>
-      <div className="explainer">Redirect:</div>
+      <div className="explainer">Sign in via redirect:</div>
       <button className="login-button" onClick={signInWithGoogleRedirect}>
         <div className="google-btn">
             <div className="google-icon-wrapper">
